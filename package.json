@@ -1,0 +1,36 @@
+{
+  "name": "dynaops-core",
+  "version": "0.1.0",
+  "description": "DynamoDB ops",
+  "author": "Kengo Nakatsuka <kengo.nakatsuka@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/nak2k/node-dynaops-core/issues"
+  },
+  "dependencies": {
+    "async-each": "^1.0.1",
+    "run-parallel": "^1.1.9"
+  },
+  "devDependencies": {
+    "aws-sdk": "^2.406.0",
+    "tape": "^4.10.1"
+  },
+  "homepage": "https://github.com/nak2k/node-dynaops-core",
+  "keywords": [
+    "aws",
+    "dynamodb"
+  ],
+  "license": "MIT",
+  "main": "lib",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nak2k/node-dynaops-core.git"
+  },
+  "scripts": {
+    "prepublishOnly": "npm test",
+    "test": "tape test/*.js"
+  },
+  "files": [
+    "README.md",
+    "lib/"
+  ]
+}
