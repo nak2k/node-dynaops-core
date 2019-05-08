@@ -10,6 +10,9 @@ test('test syncTables', t => {
   const options = {
     dynamodb,
     tableDefs: {
+      Globals: {
+        PTIR: true,
+      },
       Attributes: {
         path: { Type: 'S' },
         created: { Type: 'N' },
@@ -30,6 +33,7 @@ test('test syncTables', t => {
         },
       ],
     },
+    verbose: true,
   };
 
   syncTables(options, (err, result) => {
